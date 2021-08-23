@@ -134,7 +134,7 @@ section {
   top: 0;
   width: 100%;
   z-index: 5;
-  transition: top 0.5s;
+  transition: top 1s;
 }
 
 .page__header.active {

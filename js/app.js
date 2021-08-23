@@ -22,7 +22,7 @@ for (let i = 1; i <= 5; i++) {
 // End build the nav
 
 // Add class 'active' to section when near top of viewport
-document.addEventListener("scroll", setActiveToSection, false);
+document.addEventListener("scroll", setActiveToSection);
 
 function setActiveToSection() {
   sections.forEach((cur) => {
