@@ -56,7 +56,7 @@ scrollbutton.addEventListener("click", () => {
 function hideNav() {
   setInterval(function () {
     header.classList.add("active");
-  }, 5000);
+  }, 20000);
 }
 
 window.onscroll = () => {
