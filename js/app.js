@@ -4,8 +4,15 @@ let header = document.querySelector(".page__header");
 let uList = document.querySelector("nav ul");
 let sections = document.querySelectorAll("section");
 let scrollbutton = document.querySelector("i.scroll-top");
+let toggleButton = document.querySelector(".bullets");
 
 // End Define Global Variables
+
+// Toggle Button
+toggleButton.addEventListener("click", () => {
+  uList.classList.toggle("active");
+  toggleButton.classList.toggle("active");
+});
 
 // Start build the nav
 for (let i = 1; i <= 5; i++) {
