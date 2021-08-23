@@ -40,12 +40,6 @@ function setActiveToSection() {
 }
 
 // Start Scroll To Top Button
-window.onscroll = () => {
-  window.scrollY >= 300
-    ? scrollbutton.classList.add("active")
-    : scrollbutton.classList.remove("active");
-};
-
 scrollbutton.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
@@ -56,11 +50,17 @@ scrollbutton.addEventListener("click", () => {
 function hideNav() {
   setInterval(function () {
     header.classList.add("active");
-  }, 21000);
+  }, 20000);
 }
 
 window.onscroll = () => {
+  // Header Scroll
   header.classList.remove("active");
+
+  // Scroll Top
+  window.scrollY >= 300
+    ? scrollbutton.classList.add("active")
+    : scrollbutton.classList.remove("active");
 };
 
 hideNav();
